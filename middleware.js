@@ -2,7 +2,7 @@ const chequearCredenciales = async (req, res, next) => {
     const { email, password } = req.body
     if (!email || !password) {
         res.status(401).send({ message: "Email o contraseña inválida" })
-    }lido
+    }
     next()
 }
 
